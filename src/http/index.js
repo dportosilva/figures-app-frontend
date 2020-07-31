@@ -6,7 +6,7 @@ Vue.use(VueResource)
 
 const http = Vue.http
 
-http.options.root = 'http://localhost:5000/api/'
+http.options.root = process.env.APP_URL
 
 Object.keys(services).map(service => {
     services[service] = Vue.resource('', {}, services[service])
