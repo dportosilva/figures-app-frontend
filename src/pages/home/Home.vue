@@ -69,7 +69,7 @@ export default {
     },
 
     async close() {
-      await this.$router.push({ name: "admin" });
+      await this.$router.push({ name: "https://figures-frontend.herokuapp.com/admin" });
     }
   }
 };
