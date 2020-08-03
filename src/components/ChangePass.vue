@@ -94,7 +94,7 @@ export default {
         if (this.form.password == this.form.confirm_password)
           try {
             await axios.put(
-              "http://localhost:5000/api/users/update/" + this.user.email,
+              "https://figures-backend.herokuapp.com/api/users/update/" + this.user.email,
               {
                 email: this.user.email,
                 password: this.form.password,

@@ -99,7 +99,7 @@ export default {
         this.form.password.length >= 8
       ) {
         try {
-          await axios.post("http://localhost:5000/api/users/register", {
+          await axios.post("https://figures-backend.herokuapp.com/api/users/register", {
             email: this.form.email,
             password: this.form.password,
             confirm_password: this.form.confirm_password

@@ -64,7 +64,7 @@ export default {
   }),
 
   mounted() {
-    axios.get("http://localhost:5000/api/users/users/").then(response => {
+    axios.get("https://figures-backend.herokuapp.com/api/users/users/").then(response => {
       this.users = response.data;
     });
   },

@@ -73,7 +73,7 @@ export default {
     levelPoint: null
   }),
   mounted() {
-    axios.get("http://localhost:5000/api/levels/levels/").then(response => {
+    axios.get("https://figures-backend.herokuapp.com/api/levels/levels/").then(response => {
         this.levels = response.data;
       });
   },

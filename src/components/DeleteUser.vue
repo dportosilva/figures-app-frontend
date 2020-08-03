@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     deleteUser(id) {
-      axios.delete("http://localhost:5000/api/users/users/" + id).then(() => {
+      axios.delete("https://figures-backend.herokuapp.com/api/users/users/" + id).then(() => {
         this.dialog = false;
         location.replace("/admin");
       });

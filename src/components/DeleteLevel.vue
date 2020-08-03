@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     deleteLevel(id) {
-      axios.delete("http://localhost:5000/api/levels/levels/" + id).then(() => {
+      axios.delete("https://figures-backend.herokuapp.com/api/levels/levels/" + id).then(() => {
         this.dialog = false;
         location.replace("/admin");
       });
