@@ -166,7 +166,7 @@ export default {
           };
           levls.push(pont);
           try {
-            await axios.put("http://localhost:5000/api/users/users/" + mail, {
+            await axios.put("https://figures-backend.herokuapp.com/api/users/users/" + mail, {
               email: mail,
               password: passwd,
               levels: levls,
@@ -238,7 +238,7 @@ export default {
       if (this.success) {
         var lv = parseInt(this.level.number) + 1;
         var exists = await axios.get(
-          "http://localhost:5000/api/levels/levels/" + lv
+          "https://figures-backend.herokuapp.com/api/levels/levels/" + lv
         );
         this.success = 0;
         if (exists.data != "") {

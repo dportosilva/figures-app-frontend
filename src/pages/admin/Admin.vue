@@ -192,7 +192,7 @@ export default {
             }
           }
           this.msg = classe;
-          await axios.post("http://localhost:5000/api/levels/add-level", {
+          await axios.post("https://figures-backend.herokuapp.com/api/levels/add-level", {
             number: this.level.number,
             question: this.level.question,
             goodTime: this.level.goodTime,
@@ -252,7 +252,7 @@ export default {
         var obj = JSON.parse(this.textAdd);
         for (var txt of obj) {
           try {
-            await axios.post("http://localhost:5000/api/levels/add-level", txt);
+            await axios.post("https://figures-backend.herokuapp.com/api/levels/add-level", txt);
             this.textAdd = "";
             this.error2 = false;
             this.empty_fields2 = false;

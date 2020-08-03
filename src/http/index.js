@@ -6,7 +6,7 @@ Vue.use(VueResource)
 
 const http = Vue.http
 
-http.options.root = process.env.APP_URL
+http.options.root = "https://figures-backend.herokuapp.com/api"
 
 Object.keys(services).map(service => {
     services[service] = Vue.resource('', {}, services[service])
